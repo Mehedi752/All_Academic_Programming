@@ -1,4 +1,6 @@
-#include<bits/stdc++.h>
+// Mehedi Hasan @Mehedi752
+#pragma GCC optimize("Ofast")
+#include <bits/stdc++.h>
 using namespace std;
 int const N = 1e5+10;
 vector < int > graph[N];
