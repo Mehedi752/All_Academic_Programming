@@ -7,14 +7,16 @@ using namespace std;
 
 void Mehedi()
 {
-    ll n, val;
-    cin >> n >> val;
+    ll n;
+    cin >> n;
     ll arr[n];
     for (int i = 0; i < n; i++)
         cin >> arr[i];
     sort(arr, arr + n);
 
-    ll left = 0, right = n - 1, found = 0;
+    ll val;
+    cin >> val;
+    ll left = 0, right = n - 1, index = -1;
     while (left <= right)
     {
         ll mid = (left + right) / 2;
@@ -24,11 +26,14 @@ void Mehedi()
             left = mid + 1;
         else
         {
-            found = 1;
+            index = left;
             break;
         }
     }
-    cout << ((found) ? "YES" : "NO") << endl;
+    if (index == -1)
+        cout << "Search Unsuccessful" << '\n';
+    else
+        cout << index + 1 << '\n';
 }
 
 int main()
