@@ -13,10 +13,10 @@ void Mehedi()
     for (int i = 0; i < n; i++)
         cin >> arr[i];
 
-    ll x, index = -1;
-    cin >> x;
+    ll val, index = -1;
+    cin >> val;
     for (int i = 0; i < n; i++)
-        if (arr[i] == x)
+        if (arr[i] == val)
             index = i;
 
     if (index == -1)
