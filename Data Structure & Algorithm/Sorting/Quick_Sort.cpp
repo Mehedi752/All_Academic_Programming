@@ -1,4 +1,3 @@
-
 // Mehedi Hasan @Mehedi752
 #pragma GCC optimize("Ofast")
 #include <bits/stdc++.h>
@@ -11,14 +10,10 @@ int partition(int a[], int l, int h)
     while (i < j)
     {
         while (a[i] <= pivot)
-        {
             i++;
-        }
 
         while (a[j] > pivot)
-        {
             j--;
-        }
 
         if (i < j)
             swap(a[i], a[j]);
@@ -50,12 +45,14 @@ int main()
 
     cout << "Unsorted Array : " << '\n';
     for (int i = 0; i < n; i++)
-        cout << a[i] << " ";  cout << '\n';
+        cout << a[i] << " ";
+    cout << '\n';
 
     // Using Quicksort Algorithm to sort the array A.
-    quick_sort(a, 0, n-1);
+    quick_sort(a, 0, n - 1);
 
     cout << "Sorted Array : " << '\n';
     for (int i = 0; i < n; i++)
-        cout << a[i] << " ";  cout << '\n';
+        cout << a[i] << " ";
+    cout << '\n';
 }
